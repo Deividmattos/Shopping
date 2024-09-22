@@ -13,9 +13,7 @@ export function Cart(){
            {cart.length === 0 && (
             <div className='flex flex-col items-center justify-center'>
                   <p className='font-medium'>Ops seu carrinho esta vazio...</p>
-                  <Link to="/" className="bg-slate-600 my-3 p-1 px-3 text-white font-medium rounded">
-                  Acessar Produtos
-                  </Link>
+                  
             </div>
            )}
            
@@ -49,6 +47,13 @@ export function Cart(){
             
 
           {cart.length !== 0 &&   <p className="font-bold mt-4">Total: {total}</p>}
+
+        <div className='flex flex-col items-center justify-center'>
+                      <Link to="/" className="bg-slate-600 my-3 p-1 px-3 text-white font-medium rounded">
+                            Acessar Produtos
+                     </Link>
+                 </div>      
             </div>
       )
+      
 }
